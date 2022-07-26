@@ -1,0 +1,221 @@
+@charset "utf-8";
+
+/* --------------- 공통 --------------- */
+.inner {
+    max-width : 1140px;
+    margin: 0 auto;
+}
+
+/* --------------- HEADER --------------- */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: rgba(238, 245, 252, 0.5);
+}
+
+/* 로고 */
+.logo { float: left; }
+.logo a { 
+    padding: 32px 0; 
+    max-width: 184px;
+}
+
+/* 네비게이션 */
+#nav { 
+    float: right;
+    margin-top: 33.735px; 
+}
+
+#nav .depth1 > li { 
+    float: left; 
+    position: relative;
+    top: 50%;
+}
+#nav .depth1 > li > a {
+    color: #374785;
+    padding: 8px 27px;
+}
+#nav .depth1 > li:not(:first-child):not(:last-child) > a::after {
+    content: ' \f107';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900 !important;
+}
+#nav .depth1 > li:not(:first-child):not(:last-child):hover > a::after {
+    content: ' \f106';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+#nav .depth1 > li:hover .depth2 { display: block; }
+
+#nav .depth2 { 
+    display: none;
+    width: 160px;
+    position: absolute;
+    top: 100%;
+    left: 13.5px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    padding: 8px 0;
+}
+#nav .depth2 li a { 
+    font-size: 14px;
+    padding: 8px 16px; 
+    color: #9a9aa0;
+    display: block;
+}
+#nav .depth2 li:hover a {
+    background: #e7e7f9;
+    color: #374785;
+}
+
+/* --------------- ARTICLE_1 --------------- */
+.article_1 { 
+    background: #eef5fc; 
+    padding: 104.47px 0 62px;
+}
+
+.article_1 > .inner {
+    margin-top: 62px;
+    background: url(../images/mainbanner.png) no-repeat;
+    background-size: contain;
+}
+
+.article_1 .slogun {
+    float: right;
+    max-width: 50%;
+    padding-bottom: 245px;
+}
+.article_1 .slogun h2 {
+    font-size: 29px;
+    color: #2e2e2e;
+}
+.article_1 .slogun p {
+    font-size: 18px;
+    color: #505050;
+    padding: 40px 0;
+}
+
+/* --------------- ARTICLE_2 --------------- */
+.article_2 > .inner { 
+    padding: 50px 5px; 
+    text-align: center;
+    color: #282866;
+}
+
+.article_2 > .inner > h2 { font-size: 30px; }
+
+.article_2 .design li {
+    float: left;
+    max-width: 25%;
+    padding: 30px 5px 0;   
+}
+
+.article_2 .design .icon { font-size: 50px; }
+.article_2 .design li h3 {
+    font-size: 19px;   
+    margin: 20px 0 14px;
+}
+.article_2 .design li p {
+    font-size: 14px;
+    color: #7a7a7a;
+}
+
+/* --------------- ARTICLE_3 & ARTICLE_5 --------------- */
+.article_3 > .inner, 
+.article_5 > .inner { 
+    padding: 50px 10px; 
+    text-align: center;
+}
+
+.article_3 > .inner > h2,
+.article_5 > .inner > h2 
+{ 
+    font-size: 30px; 
+    color: #282866;
+}
+
+.article_3 .h_layout li,
+.article_5 .b_layout li {
+    float: left;
+    max-width: 33.3333%; 
+}
+
+.article_3 .h_layout li img,
+.article_5 .b_layout li img { padding: 30px 10px 20px; }
+
+.article_3 .h_layout li h3,
+.article_5 .b_layout li h3 { 
+    font-size: 18px;
+    color: #2e2e2e;
+}
+
+/* --------------- ARTICLE_4 --------------- */
+.article_4 > .play_back {
+    background: url(../images/videobanner.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 240px 0;
+}
+
+.article_4 .icon { text-align: center; }
+.article_4 .icon a {
+    width: 100px;
+    height: 100px;   
+    line-height: 90px;
+    color: #fff;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    font-size: 25px;
+}
+
+/* --------------- ARTICLE_6 --------------- */
+.article_6 {
+    background: #eef5fc;
+    padding: 130px 0;
+}
+
+.article_6 > .inner {
+    background: url(../images/subbanner.png) no-repeat;
+    background-position: right;
+    background-size: contain;
+    padding: 46.5px 0;
+}
+
+.article_6 .sub_text { max-width: 50%; }
+
+.article_6 .sub_text h2 {
+    font-size: 36px;
+    color: #2e2e2e;
+    margin-bottom: 40px;
+}
+.article_6 .sub_text p {
+    font-size: 16px;
+    color: #505050;
+}
+
+/* --------------- FOOTER--------------- */
+#footer {
+    background: #282866;
+    padding: 75px 0;
+}
+
+#footer > .inner { text-align: center; } 
+
+#footer .sns a {
+    width: 66px;
+    height: 66px;
+    line-height: 66px;
+    background: #fff;
+    border-radius: 50%; 
+    color: #282866;
+    font-size: 30px;
+    margin: 0 45px 50px 0;
+}
+#footer .sns a:last-child { margin-right: 0; }
+
+#footer .contact { color: #e3e3e3; }
+#footer .contact span { margin: 0 15px; }
